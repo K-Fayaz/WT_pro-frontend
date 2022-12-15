@@ -1,0 +1,144 @@
+.form-container{
+  width: 100%;
+  /* background: red; */
+  height: auto;
+  min-height: 50vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container form{
+  /* background: green; */
+  padding: 10px;
+  border: 1px solid black;
+  flex-basis: 25%;
+  margin-top:30px;
+}
+form h1{
+  text-align: center;
+}
+
+.field-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  position: relative;
+}
+
+.field-container input,.field-container textarea,.field-container select{
+  /* width: 100%; */
+}
+
+.row-fields{
+  width: 97%;
+  display: flex;
+  /* background: teal; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row-fields div{
+  flex-basis: 20%;
+}
+.row-fields div input{
+  width: 100%;
+}
+
+select{
+  border-radius: none;
+  border: 1px solid grey;
+  padding: 5px;
+  background: white;
+}
+.phone section,.phone div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: red; */
+  margin: 5px 0;
+}
+
+.phone div input{
+  flex-basis: 80%;
+}
+
+
+.phone section button,.phone div button{
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+}
+
+.form-btn{
+  width: 100%;
+  background: red;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+input:focus,textarea:focus{
+  outline: none;
+}
+input{
+  font-size: 14px;
+  padding-left: 5px;
+  height: 33px;
+}
+textarea{
+  padding: 3px;
+}
+
+.event-name::after,.details-field::after,.venue::after{
+  position: absolute;
+  font-size: 12px;
+  background: white;
+  padding: 3px 5px;
+  left: 10px;
+  top: -9px;
+}
+.details-field::after{
+  content: "Description";
+}
+.event-name::after{
+  content: "Event name";
+}
+.venue::after{
+  content: "Venue";
+}
+
+@media screen and (max-width: 1000px)
+{
+  .form-container form{
+    flex-basis: 35%;
+  }
+}
+
+@media screen and (max-width: 750px)
+{
+  .form-container form{
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 650px)
+{
+  .form-container form{
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 550px)
+{
+  .form-container form{
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  .form-container form{
+    flex-basis: 75%;
+  }
+}

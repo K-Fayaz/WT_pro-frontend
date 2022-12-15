@@ -1,0 +1,59 @@
+.events-container{
+  width: 70vw;
+  /* background: red; */
+  height: auto;
+  margin: auto;
+}
+.event{
+  margin-top: 20px;
+  width: 70%;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  /* background: green; */
+}
+.event a{
+  color: var(--brandColor);
+  text-decoration: none;
+}
+.event-schedule{
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+  /* background: yellow; */
+  justify-content: space-between;
+}
+.event-schedule section *{
+  margin: 0 3px;
+}
+.react-icon{
+  padding-top: 5px;
+}
+.event p{
+  /* background: teal; */
+  padding-top: 10px;
+}
+
+.btns-container{
+  width: 50%;
+  margin: 10px 0;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#deleteBtn{
+  background: red;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#editBtn{
+  background: rgb(0, 179, 255);
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}

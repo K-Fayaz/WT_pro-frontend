@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  position: relative;
+}
+
+:root{
+  --brandColor: rgba(185,31,31,1);
+  --disabled-color: rgba(240,28,56,.44);
+}

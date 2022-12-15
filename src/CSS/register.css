@@ -1,0 +1,84 @@
+.confirm-form-container{
+  width: 100%;
+  /* background: red; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: 30%;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 0px 20px -8px black;
+  background: white;
+  border-radius: 2px;
+}
+
+.form form{
+  padding: 10px;
+}
+.field-container{
+  position: relative;
+}
+.field-container::after{
+  position: absolute;
+  left: 10px;
+  top: -5px;
+  padding: 0 10px;
+  font-size: 12px;
+  background: white;
+}
+.email-field::after{
+  content: "Email";
+}
+
+.user-field::after{
+  content: "username";
+}
+
+.password-field::after{
+  content: "password";
+}
+
+.form form button{
+  width: 100%;
+  background: var(--disabled-color);
+  border: none;
+  border-radius: 2px;
+  padding: 10px 0;
+  color: white;
+  cursor: not-allowed;
+}
+
+.login-field-container{
+  width: 100%;
+  height: 80vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-contaienr{
+  width: 50%;
+  height: 80%;
+  background-color: green;
+  background: url("../../public/image_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.confirm-form-container{
+  /* background-color: yellow; */
+  flex-basis: 50%;
+}
+
+.confirm-form-container .form{
+  width: 60%;
+}
+.confirm-form-container .form h3{
+  text-align: center;
+}
+
